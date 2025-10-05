@@ -1,0 +1,166 @@
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تواصل معنا - صيدلية الخير</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(120deg, #e8f5e9, #a5d6a7);
+      color: #1b5e20;
+    }
+
+    header {
+      background-color: #1b5e20;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 1.5em;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #388e3c;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #c8e6c9;
+    }
+
+    .contact-container {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    form {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: right;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      margin-top: 5px;
+      font-family: 'Cairo', sans-serif;
+    }
+
+    button {
+      background-color: #2e7d32;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      margin-top: 15px;
+      cursor: pointer;
+      transition: 0.3s;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #43a047;
+      transform: scale(1.03);
+    }
+
+    .contact-info {
+      margin-top: 40px;
+      line-height: 1.8;
+      font-size: 1.1em;
+    }
+
+    .whatsapp-link {
+      display: inline-block;
+      background-color: #25d366;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      margin-top: 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .whatsapp-link:hover {
+      background-color: #128c7e;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #1b5e20;
+      color: white;
+      padding: 10px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>💊 صيدلية الخير</header>
+
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="products.html">المنتجات</a>
+    <a href="contact.html">تواصل معنا</a>
+  </nav>
+
+  <section class="contact-container">
+    <h2>تواصل معنا</h2>
+    <p>نحن هنا لخدمتك والإجابة على جميع استفساراتك.</p>
+
+    <form onsubmit="event.preventDefault(); alert('تم إرسال رسالتك بنجاح!');">
+      <label for="name">الاسم:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">البريد الإلكتروني:</label>
+      <input type="email" id="email" required>
+
+      <label for="message">الرسالة:</label>
+      <textarea id="message" rows="4" required></textarea>
+
+      <button type="submit">إرسال</button>
+    </form>
+
+    <div class="contact-info">
+      <p>📞 الهاتف: +249 900000000</p>
+      <p>📧 البريد الإلكتروني: info@alkhairpharmacy.com</p>
+
+      <a class="whatsapp-link" href="https://wa.me/qr/F2UH7A5HDD63P1" target="_blank">💬 تواصل عبر واتساب</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 صيدلية الخير - جميع الحقوق محفوظة
+  </footer>
+
+</body>
+</html>
